@@ -2,7 +2,6 @@
   <section class="flex">
     <div class="canvas" ref="container"></div>
     <div class="flex text canvas__text">
-      <div>Hello, I'm Joses.</div>
       Software Engineer & Educator.
     </div>
   </section>
