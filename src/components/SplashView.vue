@@ -1,7 +1,7 @@
 <template>
   <section class="flex">
     <div class="canvas" ref="container"></div>
-    <div class="flex text canvas__text">
+    <div class="flex canvas__text">
       Software Engineer & Educator.
     </div>
   </section>
@@ -18,7 +18,7 @@ export default {
       mesh: null,
       stars: null,
       starsGeo: null,
-      starImg: require("../assets/star.png"),
+      starImg: require("../assets/images/star.png"),
     };
   },
   mounted() {
@@ -28,7 +28,7 @@ export default {
     initialize() {
       let container = this.$refs["container"];
       this.scene = new THREE.Scene();
-      this.scene.background = new THREE.Color(0x0c1821);
+      this.scene.background = new THREE.Color(0xa64942);
       this.camera = new THREE.PerspectiveCamera(
         60,
         window.innerWidth / window.innerHeight,
@@ -92,10 +92,6 @@ export default {
 </script>
 
 <style scoped>
-.text {
-  color: white;
-  font-size: 1.5rem;
-}
 .canvas {
   height: 100%;
   left: 0;
@@ -106,5 +102,7 @@ export default {
 }
 .canvas__text {
   height: 100vh;
+  color: white;
+  font-size: 3rem;
 }
 </style>
