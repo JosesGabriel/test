@@ -11,7 +11,9 @@
     "core-js": "^3.6.5",
     "prettier": "^2.0.5",
     "three": "^0.117.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-gallery-slideshow": "^1.5.0",
+    "vue-runtime-helpers": "^1.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",

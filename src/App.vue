@@ -2,18 +2,21 @@
   <div id="app">
     <SplashView />
     <About />
+    <Showcase />
   </div>
 </template>
 
 <script>
 import SplashView from "./components/SplashView.vue";
 import About from "./components/About.vue";
+import Showcase from "./components/Showcase.vue";
 
 export default {
   name: "App",
   components: {
     SplashView,
     About,
+    Showcase,
   },
 };
 </script>
@@ -46,5 +49,8 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.secondary--text {
+  color: #ff7844;
 }
 </style>
