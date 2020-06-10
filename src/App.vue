@@ -25,15 +25,18 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Noto+Sans+JP:wght@100&display=swap");
 html {
   max-width: 100%;
   overflow-x: hidden;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Karla", Avenir, Helvetica, sans-serif;
+  line-height: 1.42;
   font-size: 10px;
+  color: #545454;
 }
 a {
   text-decoration: none;
@@ -54,6 +57,6 @@ body {
   justify-content: center;
 }
 .secondary--text {
-  color: #ff7844;
+  color: #7dcc93;
 }
 </style>

@@ -28,7 +28,7 @@ export default {
     initialize() {
       let container = this.$refs["container"];
       this.scene = new THREE.Scene();
-      this.scene.background = new THREE.Color(0xa64942);
+      this.scene.background = new THREE.Color(0x21374a);
       this.camera = new THREE.PerspectiveCamera(
         60,
         window.innerWidth / window.innerHeight,

@@ -141,7 +141,7 @@ export default {
   transform: scaleX(-1);
 }
 .showcase__section {
-  background-color: #ff7844;
+  background-color: #7dcc93;
 }
 .showcase__container {
   background-color: white;
@@ -157,6 +157,7 @@ export default {
   font-size: 3em;
   font-weight: bold;
   text-decoration: underline;
+  color: black;
 }
 .showcase__subtitle {
   font-size: 2em;
