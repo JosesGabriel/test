@@ -104,5 +104,7 @@ export default {
   height: 100vh;
   color: white;
   font-size: 3rem;
+  position: relative;
+  bottom: 3vh;
 }
 </style>

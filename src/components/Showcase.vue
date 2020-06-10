@@ -1,6 +1,6 @@
 <template>
   <section class="flex showcase__section">
-    <div class="card showcase__container">
+    <div class="card showcase__container" id="showcaseContainer">
       <div class="showcase__heading">Projects</div>
       <section v-for="(project, i) in projects" :key="i">
         <div v-if="currentVisibleProject == i">

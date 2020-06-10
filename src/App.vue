@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <SplashView />
-    <About />
+    <Header />
+    <SplashView id="splash" />
+    <About id="about" />
     <Showcase />
-    <Contact />
+    <Contact id="contact" />
   </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 import SplashView from "./components/SplashView.vue";
 import About from "./components/About.vue";
 import Showcase from "./components/Showcase.vue";
@@ -16,6 +18,7 @@ import Contact from "./components/Contact.vue";
 export default {
   name: "App",
   components: {
+    Header,
     SplashView,
     About,
     Showcase,
@@ -29,6 +32,7 @@ export default {
 html {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 #app {
   -webkit-font-smoothing: antialiased;
