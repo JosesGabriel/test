@@ -4,7 +4,7 @@
       CONTACT
     </span>
     <span class="contact__subheading">
-      Have a question or interested in working together? You can find me here:
+      Have a question or interested in working together?
     </span>
     <div>
       <a
@@ -29,6 +29,7 @@
         <img src="../assets/images/icons/email.png" width="45px" />
       </a>
     </div>
+    <span class="contact__credits">JOSES GABRIEL LU © 2020</span>
   </section>
 </template>
 
@@ -47,9 +48,15 @@
   background: none;
   border: none;
   padding: 6px;
-  /* border-radius: 100%; */
   height: 100%;
   outline: none;
   margin: 10px 15px;
+}
+.contact__button:hover {
+  opacity: 0.5;
+}
+.contact__credits {
+  margin: 25px 0;
+  font-size: 1.3em;
 }
 </style>
