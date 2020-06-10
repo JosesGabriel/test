@@ -3,6 +3,7 @@
     <SplashView />
     <About />
     <Showcase />
+    <Contact />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import SplashView from "./components/SplashView.vue";
 import About from "./components/About.vue";
 import Showcase from "./components/Showcase.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     SplashView,
     About,
     Showcase,
+    Contact,
   },
 };
 </script>
