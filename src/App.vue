@@ -59,7 +59,7 @@ export default {
           name: "Boomity",
           link: "https://boomity.com",
           description:
-            "BOOMITY's an easy to manage web marketing platform, customized specifically to users needs. A content management system.",
+            "BOOMITY is an easy to manage web marketing platform, customized specifically to users needs. A content management system.",
           image: [require("./assets/images/projects/boomity/home.png")],
           background: "#e39470",
         },
