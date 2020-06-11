@@ -32,8 +32,35 @@
         </a>
       </div>
     </header>
+    <header class="header--mobile">
+      <div>
+        <button
+          @click="toggleMobileMenu = !toggleMobileMenu"
+          class="header__button--mobile"
+        >
+          <img src="../assets/images/icons/menu.svg" width="30px" />
+        </button>
+      </div>
+    </header>
+
+    <div class="header__container--mobile" v-if="toggleMobileMenu">
+      <a href="#splash" @click="toggleMobileMenu = false">Home</a>
+      <a href="#about" @click="toggleMobileMenu = false">About</a>
+      <a href="#showcase" @click="toggleMobileMenu = false">Projects</a>
+      <a href="#contact" @click="toggleMobileMenu = false">Contact</a>
+    </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      toggleMobileMenu: false,
+    };
+  },
+};
+</script>
 
 <style scoped>
 .header__section {
@@ -47,6 +74,7 @@
   justify-content: space-between;
   margin-top: 1.5vh;
   width: 100%;
+  border-bottom: 1px solid white;
 }
 .header__nav {
   font-size: 1.8em;
@@ -65,16 +93,48 @@
   padding: 5px;
   border-radius: 10px;
 }
-.header__socials--link:hover {
-  opacity: 0.4;
-}
 .header__socials {
   margin-right: 2vw;
+}
+.header__socials--link:hover {
+  opacity: 0.4;
 }
 .header__socials--link {
   margin-left: 10px;
 }
-.header__socials--link img {
+.header__socials--link img,
+.header__button--mobile img {
   filter: invert(1);
+}
+.header--mobile {
+  display: none;
+}
+.header__button--mobile {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+.header__container--mobile {
+  font-size: 1.8em;
+  width: 100%;
+  background-color: #333;
+}
+.header__container--mobile a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .header--mobile {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
 }
 </style>
