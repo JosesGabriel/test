@@ -3,7 +3,12 @@
     <Header />
     <SplashView id="splash" />
     <About id="about" />
-    <Showcase />
+    <Showcase
+      v-for="(project, i) in projects"
+      :key="i"
+      :project="project"
+      id="showcase"
+    />
     <Contact id="contact" />
   </div>
 </template>
@@ -23,6 +28,54 @@ export default {
     About,
     Showcase,
     Contact,
+  },
+  data() {
+    return {
+      projects: [
+        {
+          name: "Lyduz / Arbitrage Philippines",
+          link: "https://lyduz.com",
+          description:
+            "My biggest project to date, where I led the frontend team in development. The platform was in the financial technology industry where we dealt with everything related to the Philippine Stock Exchange. It was a multi-faceted site with many different components including a built-in social media platform, charting tools, real-time trading data, trading journals and much more.",
+          image: [
+            require("./assets/images/projects/lyduz/chart_light.png"),
+            require("./assets/images/projects/lyduz/chart_dark.png"),
+          ],
+          background: "#7dcc93",
+        },
+        {
+          name: "Vyndue",
+          link: "https://vyndue.com",
+          description:
+            "A chat client for the Philippine Stock Trading Community I built when working for Lyduz. This was built on top of the Matrix protocol, a new standard for open, decentralised communication.",
+
+          image: [
+            require("./assets/images/projects/knocc/default.png"),
+            require("./assets/images/projects/knocc/explore-rooms.png"),
+          ],
+          background: "#14476b",
+        },
+        {
+          name: "Boomity",
+          link: "https://boomity.com",
+          description:
+            "BOOMITY's an easy to manage web marketing platform, customized specifically to users needs. A content management system.",
+          image: [require("./assets/images/projects/boomity/home.png")],
+          background: "#e39470",
+        },
+        {
+          name: "Maata Games BV",
+          link: "http://www.erectus.world",
+          description:
+            "Worked in Maata Games where I handled most of the front-end tasks including, but not limited to, translation of designs to fully functional aspects of the software.",
+          image: [
+            require("./assets/images/projects/maata/erectus2.jpg"),
+            require("./assets/images/projects/maata/erectus3.jpg"),
+          ],
+          background: "#679895",
+        },
+      ],
+    };
   },
 };
 </script>

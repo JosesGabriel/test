@@ -4,7 +4,7 @@
       <div class="header__nav">
         <a href="#splash" class="header__nav--link">Home</a>
         <a href="#about" class="header__nav--link">About</a>
-        <a href="#showcaseContainer" class="header__nav--link">Projects</a>
+        <a href="#showcase" class="header__nav--link">Projects</a>
         <a href="#contact" class="header__nav--link">Contact</a>
       </div>
       <div></div>

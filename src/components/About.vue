@@ -22,9 +22,6 @@
 .flex {
   justify-content: unset;
 }
-section {
-  height: 80vh;
-}
 .description__section {
   padding-top: 40px;
   font-size: 2em;
