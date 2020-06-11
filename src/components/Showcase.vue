@@ -104,4 +104,27 @@ export default {
   text-align: center;
   margin-bottom: 7vh;
 }
+@media screen and (max-width: 768px) {
+  .showcase__details {
+    width: 60vw;
+  }
+  .showcase__container {
+    padding: 10px;
+  }
+  .showcase__container--main {
+    left: 0;
+  }
+  .showcase__container--secondary {
+    display: none;
+  }
+  .showcase__image {
+    max-width: unset;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .showcase__details {
+    width: 70vw;
+  }
+}
 </style>

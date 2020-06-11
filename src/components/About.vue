@@ -39,4 +39,14 @@
   width: 200px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .description__body {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .description__body {
+    width: 70vw;
+  }
+}
 </style>

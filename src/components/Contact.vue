@@ -59,4 +59,12 @@
   margin: 25px 0;
   font-size: 1.3em;
 }
+@media screen and (max-width: 768px) {
+  .contact__subheading {
+    font-size: 1.3em;
+  }
+  .contact__button img {
+    width: 35px;
+  }
+}
 </style>
