@@ -107,4 +107,14 @@ export default {
   position: relative;
   bottom: 3vh;
 }
+@media screen and (max-width: 768px) {
+  .canvas__text {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .canvas__text {
+    font-size: 1.3rem;
+  }
+}
 </style>
