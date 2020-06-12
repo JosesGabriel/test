@@ -8,14 +8,15 @@
         <img
           class="showcase__image"
           :src="project.image[0]"
+          loading="lazy"
           @click="index = 0"
         />
-        <vue-gallery-slideshow
-          :images="project.image"
-          :index="index"
-          @close="index = null"
-        ></vue-gallery-slideshow>
       </div>
+      <vue-gallery-slideshow
+        :images="project.image"
+        :index="index"
+        @close="index = null"
+      ></vue-gallery-slideshow>
       <div
         class="showcase__container"
         :class="project.image[1] ? 'showcase__container--secondary' : ''"
@@ -24,6 +25,7 @@
         <img
           class="showcase__image"
           :src="project.image[1]"
+          loading="lazy"
           @click="index = 0"
         />
       </div>
@@ -56,7 +58,7 @@ export default {
 .showcase__container {
   display: inline-flex;
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 5px 5px 0 rgba(84, 88, 90, 0.5), 0 0 0 1px #e6ecf8;
   position: relative;
@@ -64,6 +66,7 @@ export default {
   margin-top: 15vh;
   text-align: center;
   height: 100%;
+  transition: 0.7s;
 }
 .showcase__container--main {
   z-index: 2;
@@ -71,6 +74,9 @@ export default {
 }
 .showcase__container--secondary {
   right: 5vw;
+}
+.showcase__container--secondary img {
+  height: 250px;
 }
 .showcase__images {
   display: inline-flex;
@@ -86,6 +92,9 @@ export default {
   border-radius: 3px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
   object-fit: cover;
+}
+.showcase__container:hover {
+  filter: drop-shadow(5px 5px 5px rgb(99, 96, 96));
 }
 .showcase__text {
   text-align: center;

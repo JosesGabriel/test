@@ -1,6 +1,6 @@
 <template>
   <section class="flex description__section">
-    <img class="me" src="../assets/images/ses2.png" />
+    <img class="me" loading="lazy" src="../assets/images/ses2.png" />
     <span class="description__heading"
       >Hello, I'm <span class="secondary--text">Joses.</span></span
     >
