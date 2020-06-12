@@ -26,7 +26,7 @@
           class="showcase__image"
           :src="project.image[1]"
           loading="lazy"
-          @click="index = 0"
+          @click="index = 1"
         />
       </div>
     </div>
@@ -66,7 +66,11 @@ export default {
   margin-top: 15vh;
   text-align: center;
   height: 100%;
-  transition: 0.7s;
+  /* transition: 0.4s; */
+  /* Enable hardware acceleration to fix laggy transitions */
+  /* -webkit-transform: none;
+  transform: none; */
+  transition: 0.4s linear;
 }
 .showcase__container--main {
   z-index: 2;
@@ -90,11 +94,11 @@ export default {
   cursor: pointer;
   margin: 5px;
   border-radius: 3px;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
   object-fit: cover;
 }
 .showcase__container:hover {
-  filter: drop-shadow(5px 5px 5px rgb(99, 96, 96));
+  box-shadow: 2px 14px 29px 0px rgba(42, 44, 51, 1);
+  z-index: 2;
 }
 .showcase__text {
   text-align: center;

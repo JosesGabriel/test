@@ -61,14 +61,14 @@ export default {
         {
           name: "Boomity",
           description:
-            "BOOMITY is an easy to manage web marketing platform, customized specifically to users needs.",
+            "I was part of the team that developed BOOMITY, an easy to manage web marketing platform, customized specifically to users needs.",
           image: [require("./assets/images/projects/boomity/home.png")],
           background: "#e39470",
         },
         {
           name: "Maata Games BV",
           description:
-            "Worked in Maata Games where I handled most of the front-end tasks including, but not limited to, translation of designs to fully functional aspects of the software.",
+            "Worked in Maata Games where I handled most of the front-end tasks including translation of designs to fully functional aspects of the software.",
           image: [
             require("./assets/images/projects/maata/erectus2.jpg"),
             require("./assets/images/projects/maata/erectus3.jpg"),
@@ -104,9 +104,6 @@ a:hover {
 }
 body {
   margin: 0;
-}
-.test {
-  height: 70vh;
 }
 .flex {
   display: flex;
