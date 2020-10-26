@@ -48,6 +48,17 @@ export default {
           background: "#7dcc93",
         },
         {
+          name: "FrontRx",
+          description:
+            "A project I worked on for Nuxify.tech. A platform for Physicians and Pharmacists alike to share information with each other such as prescriptions.",
+          image: [
+            require("./assets/images/projects/frontrx/home.png"),
+            require("./assets/images/projects/frontrx/login.png"),
+            require("./assets/images/projects/frontrx/pharma.png"),
+          ],
+          background: "#f76160",
+        },
+        {
           name: "Vyndue",
           description:
             "A chat client for the Philippine Stock Trading Community I built when working for Lyduz. This was built on top of the Matrix protocol, a new standard for open, decentralised communication.",
