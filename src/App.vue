@@ -86,6 +86,31 @@ export default {
           ],
           background: "#679895",
         },
+        {
+          name: "CoinMode Wallet",
+          description:
+            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. I am the sole mobile developer of this project. Currently up at https://play.google.com/store/apps/details?id=com.coinmode.wallet",
+          image: [
+            require("./assets/images/projects/coinmode/1.png"),
+            require("./assets/images/projects/coinmode/2.png"),
+            require("./assets/images/projects/coinmode/3.png"),
+            require("./assets/images/projects/coinmode/4.png"),
+            require("./assets/images/projects/coinmode/5.png"),
+          ],
+          background: "#7dcc93",
+        },
+        {
+          name: "C3 Cardiogenic Shock App",
+          description:
+            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. I am the sole mobile developer of this project. Currently up at https://play.google.com/store/apps/details?id=com.coinmode.wallet",
+          image: [
+            require("./assets/images/projects/c3/1.jpg"),
+            require("./assets/images/projects/c3/2.jpg"),
+            require("./assets/images/projects/c3/3.jpg"),
+            require("./assets/images/projects/c3/4.jpg"),
+          ],
+          background: "#f76160",
+        },
       ],
     };
   },
