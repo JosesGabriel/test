@@ -1,38 +1,7 @@
 <template>
   <section class="flex header__section">
     <header class="header">
-      <div class="header__nav">
-        <a href="#splash" class="header__nav--link">Home</a>
-        <a href="#about" class="header__nav--link">About</a>
-        <a href="#showcase" class="header__nav--link">Projects</a>
-        <a href="#contact" class="header__nav--link">Contact</a>
-      </div>
-      <div></div>
-      <div class="header__socials">
-        <a
-          href="https://www.linkedin.com/in/joses-gabriel-lu-660a92163/"
-          target="#"
-          class="header__socials--link"
-        >
-          <img src="../assets/images/icons/linkedin.svg" width="30px" />
-        </a>
-        <a
-          href="https://github.com/JosesGabriel"
-          target="#"
-          class="header__socials--link"
-        >
-          <img src="../assets/images/icons/github.svg" width="30px" />
-        </a>
-        <a
-          href="mailto:josesgabriellu@gmail.com"
-          target="#"
-          class="header__socials--link"
-        >
-          <img src="../assets/images/icons/email.png" width="30px" />
-        </a>
-      </div>
-    </header>
-    <header class="header--mobile">
+      <div class="header--name">JGL</div>
       <div>
         <button
           @click="toggleMobileMenu = !toggleMobileMenu"
@@ -64,7 +33,7 @@ export default {
 
 <style scoped>
 .header__section {
-  background-color: #21384a;
+  background-color: #000000;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -72,9 +41,14 @@ export default {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5vh;
+  padding-top: 1vh;
   width: 100%;
-  border-bottom: 1px solid white;
+}
+.header--name {
+  font-size: 2em;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  color: #fff;
 }
 .header__nav {
   font-size: 1.8em;
@@ -106,9 +80,6 @@ export default {
 .header__button--mobile img {
   filter: invert(1);
 }
-.header--mobile {
-  display: none;
-}
 .header__button--mobile {
   background-color: transparent;
   border: 0;
@@ -126,7 +97,7 @@ export default {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .header {
     display: none;
   }
@@ -136,5 +107,5 @@ export default {
     width: 100%;
     border-bottom: 1px solid white;
   }
-}
+} */
 </style>
