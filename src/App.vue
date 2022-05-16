@@ -45,7 +45,7 @@ export default {
             require("./assets/images/projects/lyduz/watchlist_dark.png"),
             require("./assets/images/projects/lyduz/watchlist_light.png"),
           ],
-          background: "#7dcc93",
+          background: "#000000",
         },
         {
           name: "FrontRx",
@@ -56,7 +56,7 @@ export default {
             require("./assets/images/projects/frontrx/login.png"),
             require("./assets/images/projects/frontrx/pharma.png"),
           ],
-          background: "#f76160",
+          background: "#000000",
         },
         {
           name: "Vyndue",
@@ -67,14 +67,14 @@ export default {
             require("./assets/images/projects/knocc/default.png"),
             require("./assets/images/projects/knocc/explore-rooms.png"),
           ],
-          background: "#14476b",
+          background: "#000000",
         },
         {
           name: "Boomity",
           description:
             "I was part of the team that developed BOOMITY, an easy to manage web marketing platform, customized specifically to users needs.",
           image: [require("./assets/images/projects/boomity/home.png")],
-          background: "#e39470",
+          background: "#000000",
         },
         {
           name: "Maata Games BV",
@@ -84,7 +84,7 @@ export default {
             require("./assets/images/projects/maata/erectus2.jpg"),
             require("./assets/images/projects/maata/erectus3.jpg"),
           ],
-          background: "#679895",
+          background: "#000000",
         },
         {
           name: "CoinMode Wallet",
@@ -97,7 +97,7 @@ export default {
             require("./assets/images/projects/coinmode/4.png"),
             require("./assets/images/projects/coinmode/5.png"),
           ],
-          background: "#7dcc93",
+          background: "#000000",
         },
         {
           name: "C3 Cardiogenic Shock App",
@@ -109,7 +109,7 @@ export default {
             require("./assets/images/projects/c3/3.jpg"),
             require("./assets/images/projects/c3/4.jpg"),
           ],
-          background: "#f76160",
+          background: "#000000",
         },
       ],
     };
@@ -132,6 +132,7 @@ html {
   line-height: 1.42;
   font-size: 10px;
   color: #545454;
+  background-color: black;
 }
 a {
   text-decoration: none;

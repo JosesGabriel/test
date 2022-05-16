@@ -17,18 +17,6 @@
         :index="index"
         @close="index = null"
       ></vue-gallery-slideshow>
-      <div
-        class="showcase__container"
-        :class="project.image[1] ? 'showcase__container--secondary' : ''"
-        v-if="project.image[1]"
-      >
-        <img
-          class="showcase__image"
-          :src="project.image[1]"
-          loading="lazy"
-          @click="index = 1"
-        />
-      </div>
     </div>
     <div class="showcase__text">
       <div class="showcase__heading">{{ project.name }}</div>
@@ -57,24 +45,17 @@ export default {
 <style scoped>
 .showcase__container {
   display: inline-flex;
-  background-color: #f5f5f5;
-  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 5px 5px 0 rgba(84, 88, 90, 0.5), 0 0 0 1px #e6ecf8;
-  position: relative;
   margin: 50px 0;
-  margin-top: 15vh;
-  text-align: center;
-  height: 100%;
-  /* transition: 0.4s; */
-  /* Enable hardware acceleration to fix laggy transitions */
-  /* -webkit-transform: none;
-  transform: none; */
   transition: 0.4s linear;
+}
+
+.showcase__container:hover {
+  background: unset;
 }
 .showcase__container--main {
   z-index: 2;
-  left: 11vw;
 }
 .showcase__container--secondary {
   right: 5vw;

@@ -225,14 +225,15 @@ export default {
   position: absolute;
   top: 0;
   width: 100vw;
-  z-index: -1;
+  z-index: 0;
 }
 .canvas__text {
   height: 100vh;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 60vw;
   bottom: 3vh;
+  z-index: 1;
 }
 .nuxify__link {
   color: white;
