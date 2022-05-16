@@ -1,33 +1,41 @@
 <template>
-  <section class="" :style="'background-color: ' + project.background">
-    <div class="showcase__images">
-      <div
-        class="showcase__container"
-        :class="project.image[1] ? 'showcase__container--main' : ''"
-      >
-        <img
-          class="showcase__image"
-          :src="project.image[0]"
-          loading="lazy"
-          @click="index = 0"
-        />
-        <img
-          v-if="project.isMobile"
-          class="showcase__image"
-          :src="project.image[1]"
-          loading="lazy"
-          @click="index = 0"
-        />
+  <section :style="'background-color: ' + project.background">
+    <div class="project__card">
+      <div class="showcase__images">
+        <div
+          class="showcase__container"
+          :class="project.image[1] ? 'showcase__container--main' : ''"
+        >
+          <img
+            class="showcase__image"
+            :src="project.image[0]"
+            loading="lazy"
+            @click="index = 0"
+          />
+          <img
+            v-if="project.isMobile"
+            class="showcase__image"
+            :src="project.image[1]"
+            loading="lazy"
+            @click="index = 0"
+          />
+        </div>
+        <vue-gallery-slideshow
+          :images="project.image"
+          :index="index"
+          @close="index = null"
+        ></vue-gallery-slideshow>
       </div>
-      <vue-gallery-slideshow
-        :images="project.image"
-        :index="index"
-        @close="index = null"
-      ></vue-gallery-slideshow>
-    </div>
-    <div class="showcase__text">
-      <div class="showcase__heading">{{ project.name }}</div>
-      <div class="showcase__details">{{ project.description }}</div>
+      <div class="showcase__text">
+        <div class="showcase__heading">
+          {{ project.name }}
+        </div>
+        <br />
+        <br />
+        <div class="showcase__details">
+          {{ project.description }}
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -53,13 +61,10 @@ export default {
 .showcase__container {
   display: inline-flex;
   border-radius: 8px;
-  box-shadow: 0 5px 5px 0 rgba(84, 88, 90, 0.5), 0 0 0 1px #e6ecf8;
+  box-shadow: 0 5px 5px 0 rgba(84, 88, 90, 0.5), 0 0 0 1px #ffffff;
   margin: 50px 0;
-  transition: 0.4s linear;
-}
-
-.showcase__container:hover {
-  background: unset;
+  transition: 0.2s linear;
+  background-color: white;
 }
 .showcase__container--main {
   z-index: 2;
@@ -83,24 +88,31 @@ export default {
   margin: 5px;
   border-radius: 3px;
   object-fit: cover;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .showcase__container:hover {
-  box-shadow: 2px 14px 29px 0px rgba(42, 44, 51, 1);
+  box-shadow: 0px 14px 29px 5px rgba(156, 157, 161, 0.468), 0 0 0 4px #e871d6d8;
   z-index: 2;
 }
 .showcase__text {
   text-align: center;
 }
 .showcase__heading {
-  font-weight: bolder;
   font-size: 3em;
   margin-bottom: 2vh;
   color: white;
+  background-image: linear-gradient(to right, #ac43cf, #b44d85);
+  border-radius: 5px;
+  display: initial;
+  font-weight: 900;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }
 .showcase__details {
   display: inline-flex;
   font-size: 1.9em;
-  color: white;
+  color: #a1a1a1;
   width: 35vw;
   text-align: center;
   margin-bottom: 7vh;

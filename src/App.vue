@@ -120,8 +120,12 @@ export default {
 </script>
 
 <style>
-/* @import url("https://fonts.googleapis.com/css2?family=Karla&family=Noto+Sans+JP:wght@100&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap");
+@font-face {
+  font-family: poppins;
+  font-weight: 600;
+  src: url("./assets/font/Poppins/Poppins-Medium.ttf");
+}
 html {
   max-width: 100%;
   overflow-x: hidden;
@@ -163,6 +167,6 @@ body {
   justify-content: center;
 }
 .secondary--text {
-  color: #7dcc93;
+  color: #dd62bca9;
 }
 </style>

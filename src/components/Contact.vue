@@ -1,8 +1,6 @@
 <template>
   <section class="flex contact__section">
-    <span class="contact__heading">
-      CONTACT
-    </span>
+    <span class="contact__heading"> Contact </span>
     <span class="contact__subheading">
       Have a question or interested in working together?
     </span>
@@ -29,16 +27,24 @@
         <img src="../assets/images/icons/email.png" width="45px" />
       </a>
     </div>
-    <span class="contact__credits">JOSES GABRIEL LU © 2020</span>
+    <span class="contact__credits">JOSES GABRIEL LU © 2022</span>
   </section>
 </template>
 
 <style scoped>
+.contact__section {
+  background-image: linear-gradient(to right, #ac43cf, #b44d85);
+  color: white;
+  font-family: poppins;
+}
 .contact__heading {
   margin: 2.5vh 0;
   font-size: 2.5em;
   font-weight: bold;
-  text-decoration: underline;
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
 }
 .contact__subheading {
   font-size: 1.6em;
@@ -51,6 +57,7 @@
   height: 100%;
   outline: none;
   margin: 10px 15px;
+  filter: invert();
 }
 .contact__button:hover {
   opacity: 0.5;

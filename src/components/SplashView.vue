@@ -2,14 +2,14 @@
   <section class="flex">
     <div class="canvas" ref="container"></div>
     <div class="flex canvas__text">
-      <p>
-        Hi, my name's Joses. I make websites and mobile apps.<br /><br />
-        I'm a Software Engineer and the COO of
+      <div class="splash__heading">
+        <div class="xx">Software engineer.</div>
+        <br /><br />
         <a class="nuxify__link" href="https://nuxify.tech/" target="_blank"
           >Nuxify</a
-        >,<br />
-        a software company based in the Philippines.
-      </p>
+        >
+        Chief Operating Officer.
+      </div>
     </div>
   </section>
 </template>
@@ -43,7 +43,6 @@ export default {
         1000
       );
       this.camera.position.z = 2;
-
       this.renderer = new THREE.WebGLRenderer();
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       container.append(this.renderer.domElement);
@@ -179,6 +178,7 @@ export default {
         wireframe: false,
       });
       const mesh = new THREE.Mesh(geometry, material);
+      mesh.rotateY(5.7);
       this.scene.add(mesh);
       const clock = new THREE.Clock();
       const tick = () => {
@@ -219,6 +219,12 @@ export default {
 </script>
 
 <style scoped>
+.xx {
+  background-image: linear-gradient(to right, #dd62bca9, #d58b0a6f);
+  border-radius: 5px;
+  display: inline;
+  padding: 5px;
+}
 .canvas {
   height: 100%;
   left: 0;
@@ -230,7 +236,8 @@ export default {
 .canvas__text {
   height: 100vh;
   color: white;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: 900;
   width: 60vw;
   bottom: 3vh;
   z-index: 1;
@@ -239,6 +246,16 @@ export default {
   color: white;
   text-decoration: underline;
   text-decoration-color: white;
+  background-image: linear-gradient(to right, #dd62bca9, #d58b0a6f);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+}
+.nuxify__link:hover {
+  background-color: rgb(219, 45, 190);
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 @media screen and (max-width: 768px) {
   .canvas__text {
