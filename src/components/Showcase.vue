@@ -11,6 +11,13 @@
           loading="lazy"
           @click="index = 0"
         />
+        <img
+          v-if="project.isMobile"
+          class="showcase__image"
+          :src="project.image[1]"
+          loading="lazy"
+          @click="index = 0"
+        />
       </div>
       <vue-gallery-slideshow
         :images="project.image"

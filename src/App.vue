@@ -48,6 +48,20 @@ export default {
           background: "#000000",
         },
         {
+          name: "CoinMode Wallet",
+          description:
+            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. Send and receive payments directly to players, friends and colleagues. Currently available on the App Store and Google Play.",
+          image: [
+            require("./assets/images/projects/coinmode/1.png"),
+            require("./assets/images/projects/coinmode/2.png"),
+            require("./assets/images/projects/coinmode/3.png"),
+            require("./assets/images/projects/coinmode/4.png"),
+            require("./assets/images/projects/coinmode/5.png"),
+          ],
+          background: "#000000",
+          isMobile: true,
+        },
+        {
           name: "FrontRx",
           description:
             "A project I worked on for Nuxify.tech. A platform for Physicians and Pharmacists alike to share information with each other such as prescriptions.",
@@ -57,6 +71,19 @@ export default {
             require("./assets/images/projects/frontrx/pharma.png"),
           ],
           background: "#000000",
+        },
+        {
+          name: "C3 Cardiogenic Shock App",
+          description:
+            "An app for patients to monitor their heart rate and to receive a cardiogenic shock if the heart rate is above a certain threshold. Currently available on the App Store and Google Play.",
+          image: [
+            require("./assets/images/projects/c3/1.jpg"),
+            require("./assets/images/projects/c3/2.jpg"),
+            require("./assets/images/projects/c3/3.jpg"),
+            require("./assets/images/projects/c3/4.jpg"),
+          ],
+          background: "#000000",
+          isMobile: true,
         },
         {
           name: "Vyndue",
@@ -86,31 +113,6 @@ export default {
           ],
           background: "#000000",
         },
-        {
-          name: "CoinMode Wallet",
-          description:
-            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. I am the sole mobile developer of this project. Currently up at https://play.google.com/store/apps/details?id=com.coinmode.wallet",
-          image: [
-            require("./assets/images/projects/coinmode/1.png"),
-            require("./assets/images/projects/coinmode/2.png"),
-            require("./assets/images/projects/coinmode/3.png"),
-            require("./assets/images/projects/coinmode/4.png"),
-            require("./assets/images/projects/coinmode/5.png"),
-          ],
-          background: "#000000",
-        },
-        {
-          name: "C3 Cardiogenic Shock App",
-          description:
-            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. I am the sole mobile developer of this project. Currently up at https://play.google.com/store/apps/details?id=com.coinmode.wallet",
-          image: [
-            require("./assets/images/projects/c3/1.jpg"),
-            require("./assets/images/projects/c3/2.jpg"),
-            require("./assets/images/projects/c3/3.jpg"),
-            require("./assets/images/projects/c3/4.jpg"),
-          ],
-          background: "#000000",
-        },
       ],
     };
   },
@@ -124,6 +126,17 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: black;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
 #app {
   -webkit-font-smoothing: antialiased;
