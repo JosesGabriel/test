@@ -120,11 +120,17 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap");
 @font-face {
-  font-family: poppins;
-  font-weight: 600;
+  font-family: poppins-regular;
+  src: url("./assets/font/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-medium;
   src: url("./assets/font/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: poppins-light;
+  src: url("./assets/font/Poppins/Poppins-Light.ttf");
 }
 html {
   max-width: 100%;
@@ -145,7 +151,7 @@ body::-webkit-scrollbar-thumb {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Karla", Avenir, Helvetica, sans-serif;
+  font-family: poppins-light;
   line-height: 1.42;
   font-size: 10px;
   color: #545454;

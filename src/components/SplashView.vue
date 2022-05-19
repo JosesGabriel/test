@@ -3,7 +3,7 @@
     <div class="canvas" ref="container"></div>
     <div class="flex canvas__text">
       <div class="splash__heading">
-        <div class="xx">Software engineer.</div>
+        <div class="header__text">Software engineer.</div>
         <br /><br />
         <a class="nuxify__link" href="https://nuxify.tech/" target="_blank"
           >Nuxify</a
@@ -219,7 +219,8 @@ export default {
 </script>
 
 <style scoped>
-.xx {
+.header__text {
+  font-family: poppins-regular;
   background-image: linear-gradient(to right, #dd62bca9, #d58b0a6f);
   border-radius: 5px;
   display: inline;
@@ -234,6 +235,7 @@ export default {
   z-index: 0;
 }
 .canvas__text {
+  font-family: poppins-regular;
   height: 100vh;
   color: white;
   font-size: 2.4rem;

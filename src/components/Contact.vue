@@ -35,7 +35,6 @@
 .contact__section {
   background-image: linear-gradient(to right, #ac43cf, #b44d85);
   color: white;
-  font-family: poppins;
 }
 .contact__heading {
   margin: 2.5vh 0;

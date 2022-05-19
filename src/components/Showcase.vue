@@ -99,6 +99,7 @@ export default {
 }
 .showcase__heading {
   font-size: 3em;
+  font-family: poppins-medium;
   margin-bottom: 2vh;
   color: white;
   background-image: linear-gradient(to right, #ac43cf, #b44d85);
@@ -106,8 +107,7 @@ export default {
   display: initial;
   font-weight: 900;
   padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 10px;
+  padding-right: 18px;
 }
 .showcase__details {
   display: inline-flex;
