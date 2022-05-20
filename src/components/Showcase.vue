@@ -118,6 +118,10 @@ export default {
   margin-bottom: 7vh;
 }
 @media screen and (max-width: 768px) {
+  .showcase__heading {
+    display: block;
+    border-radius: 0;
+  }
   .showcase__details {
     width: 60vw;
   }
