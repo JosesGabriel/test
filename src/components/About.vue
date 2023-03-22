@@ -4,7 +4,7 @@
     <span class="description__heading">Hello, I'm Joses.</span>
     <div class="description__body">
       <br />
-      I am a software Engineer with 6 years of professional experience and a
+      I am a Software Engineer with 6 years of professional experience and a
       demonstrated history of leadership and working in the software development
       industry.
     </div>
@@ -19,10 +19,20 @@
       >, a development-as-a-service (DaaS) company based in the Philippines.
       <br /><br />
 
-      I specialize in Mobile Development where I build apps using Dart &
+      I specialize in Mobile Development where I build apps using
+      <img class="icon" loading="lazy" src="../assets/icons/dart.png" /> Dart &
+      <img class="icon" loading="lazy" src="../assets/icons/flutter.png" />
       Flutter. <br /><br />
-      I also work in the Frontend with Web using Vue.js/Nuxt,
-      Javascript/Typescript, and Node. <br />
+      I also work in the Frontend with Web using
+      <img class="icon" loading="lazy" src="../assets/icons/vue.png" />
+      Vue.js/
+      <img class="icon" loading="lazy" src="../assets/icons/nuxt.png" /> Nuxt,
+      <img class="icon" loading="lazy" src="../assets/icons/javascript.png" />
+      Javascript/
+      <img class="icon" loading="lazy" src="../assets/icons/typescript.png" />
+      Typescript, and
+      <img class="icon" loading="lazy" src="../assets/icons/node.png" /> Node.
+      <br />
       <br />
 
       I occasionally accept speaking engagements with conferences and
@@ -63,6 +73,9 @@
 .me {
   width: 200px;
   padding-bottom: 20px;
+}
+.icon {
+  width: 15px;
 }
 @media screen and (max-width: 768px) {
   .description__body {
