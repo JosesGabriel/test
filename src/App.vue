@@ -33,21 +33,6 @@ export default {
     return {
       projects: [
         {
-          name: "FinTech Stock Trading",
-          description:
-            "A project where I led the frontend team in development. The platform was in the financial technology industry where we dealt with everything related to the Philippine Stock Exchange. It was a multi-faceted site with many different components including a built-in social media platform, charting tools, real-time trading data, trading journals and much more.",
-          image: [
-            require("./assets/images/projects/lyduz/chart_light.png"),
-            require("./assets/images/projects/lyduz/chart_dark.png"),
-            require("./assets/images/projects/lyduz/landing_page.png"),
-            require("./assets/images/projects/lyduz/profile_light.png"),
-            require("./assets/images/projects/lyduz/social_dark.png"),
-            require("./assets/images/projects/lyduz/watchlist_dark.png"),
-            require("./assets/images/projects/lyduz/watchlist_light.png"),
-          ],
-          background: "#000000",
-        },
-        {
           name: "Fiat/Crypto Wallet",
           description:
             "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. Send and receive payments directly to players, friends and colleagues. Deployed on the App Store and Google Play.",
@@ -62,15 +47,16 @@ export default {
           isMobile: true,
         },
         {
-          name: "Medical Consultation",
+          name: "Mobile Point-of-Sales",
           description:
-            "A platform for Physicians and Pharmacists alike to share information with each other such as prescriptions.",
+            "A blockchain powered Point-of-Sales mobile app currently in development. The app allows your business to accept payments from customers and keep track of sales.",
           image: [
-            require("./assets/images/projects/consultation/home.png"),
-            require("./assets/images/projects/consultation/login.png"),
-            require("./assets/images/projects/consultation/pharma.png"),
+            require("./assets/images/projects/nuximart/3.png"),
+            require("./assets/images/projects/nuximart/1.png"),
+            require("./assets/images/projects/nuximart/2.png"),
           ],
           background: "#000000",
+          isMobile: true,
         },
         {
           name: "Cardio Consultation",
@@ -84,6 +70,46 @@ export default {
           ],
           background: "#000000",
           isMobile: true,
+        },
+        {
+          name: "Modular Architecture Flutter Template",
+          description:
+            "Flirt is an open source Flutter template I made for building medium to large sized applications following Modular Architecture and BLoC State Management.",
+          image: [require("./assets/images/projects/flirt/1.png")],
+          background: "#000000",
+        },
+        {
+          name: "Smart Contracts/dApp Flutter Template",
+          description:
+            "Sophon is a free, open-source Flutter template designed by me for medium to large sized dApp development that adheres to the Flirt Template modular architecture. It also has a built-in option to establish a connection with an external wallet like MetaMask, which keeps the session alive even if the app is closed.",
+          image: [require("./assets/images/projects/sophon/1.jpeg")],
+          background: "#000000",
+        },
+        {
+          name: "Medical Consultation",
+          description:
+            "A platform for Physicians and Pharmacists alike to share information with each other such as prescriptions.",
+          image: [
+            require("./assets/images/projects/consultation/home.png"),
+            require("./assets/images/projects/consultation/login.png"),
+            require("./assets/images/projects/consultation/pharma.png"),
+          ],
+          background: "#000000",
+        },
+        {
+          name: "FinTech Stock Trading",
+          description:
+            "A project where I led the frontend team in development. The platform was in the financial technology industry where we dealt with everything related to the Philippine Stock Exchange. It was a multi-faceted site with many different components including a built-in social media platform, charting tools, real-time trading data, trading journals and much more.",
+          image: [
+            require("./assets/images/projects/lyduz/chart_light.png"),
+            require("./assets/images/projects/lyduz/chart_dark.png"),
+            require("./assets/images/projects/lyduz/landing_page.png"),
+            require("./assets/images/projects/lyduz/profile_light.png"),
+            require("./assets/images/projects/lyduz/social_dark.png"),
+            require("./assets/images/projects/lyduz/watchlist_dark.png"),
+            require("./assets/images/projects/lyduz/watchlist_light.png"),
+          ],
+          background: "#000000",
         },
         {
           name: "Matrix Chat Client",
