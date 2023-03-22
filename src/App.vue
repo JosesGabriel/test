@@ -33,7 +33,7 @@ export default {
     return {
       projects: [
         {
-          name: "Lyduz / Arbitrage Philippines",
+          name: "FinTech Stock Trading",
           description:
             "A project where I led the frontend team in development. The platform was in the financial technology industry where we dealt with everything related to the Philippine Stock Exchange. It was a multi-faceted site with many different components including a built-in social media platform, charting tools, real-time trading data, trading journals and much more.",
           image: [
@@ -86,7 +86,7 @@ export default {
           isMobile: true,
         },
         {
-          name: "Vyndue",
+          name: "Matrix Chat Client",
           description:
             "A chat client for the Philippine Stock Trading Community I built when working for Lyduz. This was built on top of the Matrix protocol, a new standard for open, decentralised communication.",
 
@@ -97,7 +97,7 @@ export default {
           background: "#000000",
         },
         {
-          name: "Boomity",
+          name: "Web Marketing",
           description:
             "I was part of the team that developed BOOMITY, an easy to manage web marketing platform, customized specifically to users needs.",
           image: [require("./assets/images/projects/boomity/home.png")],
