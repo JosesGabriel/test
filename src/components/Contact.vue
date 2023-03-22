@@ -27,7 +27,7 @@
         <img src="../assets/images/icons/email.png" width="45px" />
       </a>
     </div>
-    <span class="contact__credits">JOSES GABRIEL LU © 2022</span>
+    <span class="contact__credits">JOSES GABRIEL LU © 2023</span>
   </section>
 </template>
 
