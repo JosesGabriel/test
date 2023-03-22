@@ -3,22 +3,30 @@
     <img class="me" loading="lazy" src="../assets/images/ses2.png" />
     <span class="description__heading">Hello, I'm Joses.</span>
     <div class="description__body">
-      I'm a software engineer with an affinity towards Mobile and Web
-      Development.
+      <br />
+      I am a software Engineer with 6 years of professional experience and a
+      demonstrated history of leadership and working in the software development
+      industry.
     </div>
     <br />
     <div class="description__body">
-      Currently the COO of
+      I am currently the COO of
       <a
         class="nuxify__link nuxify__about"
         href="https://nuxify.tech/"
         target="_blank"
         >Nuxify</a
-      >, a software development company based in the Philippines. <br /><br />
+      >, a development-as-a-service (DaaS) company based in the Philippines.
+      <br /><br />
 
-      I have participated in programming competitions (once outside the
-      country!) and eventually grew to judge a few. I am also frequently
-      commissioned to speak at conferences and colleges to speak about tech.
+      I specialize in Mobile Development where I build apps using Dart &
+      Flutter. <br /><br />
+      I also work in the Frontend with Web using Vue.js/Nuxt,
+      Javascript/Typescript, and Node. <br />
+      <br />
+
+      I occasionally accept speaking engagements with conferences and
+      universities to speak about the world of tech.
     </div>
   </section>
 </template>
