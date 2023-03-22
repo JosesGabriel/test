@@ -35,7 +35,7 @@ export default {
         {
           name: "Lyduz / Arbitrage Philippines",
           description:
-            "My biggest project to date, where I led the frontend team in development. The platform was in the financial technology industry where we dealt with everything related to the Philippine Stock Exchange. It was a multi-faceted site with many different components including a built-in social media platform, charting tools, real-time trading data, trading journals and much more.",
+            "A project where I led the frontend team in development. The platform was in the financial technology industry where we dealt with everything related to the Philippine Stock Exchange. It was a multi-faceted site with many different components including a built-in social media platform, charting tools, real-time trading data, trading journals and much more.",
           image: [
             require("./assets/images/projects/lyduz/chart_light.png"),
             require("./assets/images/projects/lyduz/chart_dark.png"),
@@ -48,39 +48,39 @@ export default {
           background: "#000000",
         },
         {
-          name: "CoinMode Wallet",
+          name: "Fiat/Crypto Wallet",
           description:
-            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. Send and receive payments directly to players, friends and colleagues. Currently available on the App Store and Google Play.",
+            "A digital wallet that supports cryptocurrencies as well as GBP, EUR, and USD. Send and receive payments directly to players, friends and colleagues. Deployed on the App Store and Google Play.",
           image: [
-            require("./assets/images/projects/coinmode/1.png"),
-            require("./assets/images/projects/coinmode/2.png"),
-            require("./assets/images/projects/coinmode/3.png"),
-            require("./assets/images/projects/coinmode/4.png"),
-            require("./assets/images/projects/coinmode/5.png"),
+            require("./assets/images/projects/cryptoWallet/1.png"),
+            require("./assets/images/projects/cryptoWallet/2.png"),
+            require("./assets/images/projects/cryptoWallet/3.png"),
+            require("./assets/images/projects/cryptoWallet/4.png"),
+            require("./assets/images/projects/cryptoWallet/5.png"),
           ],
           background: "#000000",
           isMobile: true,
         },
         {
-          name: "FrontRx",
+          name: "Medical Consultation",
           description:
-            "A project I worked on for Nuxify.tech. A platform for Physicians and Pharmacists alike to share information with each other such as prescriptions.",
+            "A platform for Physicians and Pharmacists alike to share information with each other such as prescriptions.",
           image: [
-            require("./assets/images/projects/frontrx/home.png"),
-            require("./assets/images/projects/frontrx/login.png"),
-            require("./assets/images/projects/frontrx/pharma.png"),
+            require("./assets/images/projects/consultation/home.png"),
+            require("./assets/images/projects/consultation/login.png"),
+            require("./assets/images/projects/consultation/pharma.png"),
           ],
           background: "#000000",
         },
         {
-          name: "C3 Cardiogenic Shock App",
+          name: "Cardio Consultation",
           description:
-            "An app for patients to monitor their heart rate and to receive a cardiogenic shock if the heart rate is above a certain threshold. Currently available on the App Store and Google Play.",
+            "An app for patients to monitor their heart rate and to receive a cardiogenic shock if the heart rate is above a certain threshold. Deployed on the App Store and Google Play.",
           image: [
-            require("./assets/images/projects/c3/1.jpg"),
-            require("./assets/images/projects/c3/2.jpg"),
-            require("./assets/images/projects/c3/3.jpg"),
-            require("./assets/images/projects/c3/4.jpg"),
+            require("./assets/images/projects/cardio/1.jpg"),
+            require("./assets/images/projects/cardio/2.jpg"),
+            require("./assets/images/projects/cardio/3.jpg"),
+            require("./assets/images/projects/cardio/4.jpg"),
           ],
           background: "#000000",
           isMobile: true,
